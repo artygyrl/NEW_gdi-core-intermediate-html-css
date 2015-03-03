@@ -1,0 +1,376 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Intermediate HTML/CSS ~ Girl Develop IT</title>
+
+    <meta name="description" content="Main Page for the GDI Intermediate HTML/CSS Course">
+    <meta name="author" content="Girl Develop It">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    
+    
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css">     
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">  <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="css/flipclock.css">
+    <link rel="stylesheet" href="css/theme/gdidefault.css" /> <!--GDI Styling-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/flipclock.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#Class1").load("class1.html", function (response, status, xhr) {
+                if (status == "error") {
+                    var msg = "Sorry but there was an error: ";
+                    $("#error").html(msg + xhr.status + " " + xhr.statusText);
+                }
+            });
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    
+</head>
+
+<body>
+    <div class="reveal">
+    <div id="header"></div>
+        <div id="error"></div>
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h3>Intermediate HTML and CSS</h3>
+                <div class="center">
+                    <img src="images/global/GDIHoustonLogo.png" alt="GDI Houston Logo">
+                </div>
+            </section>
+            <!--Agenda-->
+            <section>
+                <h3>Agenda</h3>
+                <table style="text-align: right;">
+                    <tr>
+                        <td style="text-align: right;">8:00am - 8:15am</td>
+                        <td>Introductions <i class="fa fa-users"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">8:15am - 10:00am</td>
+                        <td> <a href="class1.html">HTML Review & HTML 5 Intro</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">10:00am - 10:15am</td>
+                        <td>Break <i class="fa fa-coffee"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">10:15am - 12:00pm</td>
+                        <td><a href="class2.html">CSS3</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">12:00pm - 1:00pm</td>
+                        <td>Lunch <i class="fa fa-cutlery"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">1:00pm - 2:45pm</td>
+                        <td><a href="class3.html">More HTML</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">2:45pm - 3:00pm</td>
+                        <td>Break <i class="fa fa-coffee"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">3:00pm - 4:45pm</td>
+                        <td><a href="class4.html">Even More HTML</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">4:45pm - 5:00pm </td>
+                        <td>Questions <i class="fa fa-question"></i></td>
+                    </tr>
+                </table>
+            </section><!--Agenda-->
+            <!-- Welcome-->
+            <section>
+                <h2>
+                    <strong>Intro</strong>ductions
+                </h2>
+                <p>I would like to get to know everyone. We will go around the room have everyone state the following items:</p>
+                <ol>
+                    <li>My <strong>name</strong> is...</li>
+                    <li>I'm taking this class <strong>because</strong>...</li>
+                    <li>
+                        If someone made a <strong>movie of your life</strong> would it be a:
+                        <ul>
+                            <li>Drama</li>
+                            <li>Comedy</li>
+                            <li>Romantic-Comedy</li>
+                            <li>Action Film</li>
+                            <li>Science Fiction</li>
+                            <li><em>Other</em></li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <!--Getting Started-->
+            <section>
+                <section>
+                    <h3>Housekeeping Items</h3>
+                    <div class="center">
+                        <img src="images/global/HouseKeeping.jpg" alt="House Keeping" />
+                    </div>
+                </section>
+                <section>
+                    <h3>Classroom "Rules"</h3>
+                    <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+                    <ul>
+                        <li>We are here for you!</li>
+                        <li>Every question is important</li>
+                        <li>Help each other</li>
+                        <li>Have fun</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>
+                            <div class="yellow">Browser</div>
+                            <div>
+                                <a href="https://www.google.com/chrome/browser/desktop/" target="_blank">Chrome</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="yellow">Text Editor</div>
+                            <div>
+                                <a href="http://notepad-plus-plus.org/download/v6.7.4.html" target="_blank">Notepad ++ </a> - Windows
+                            </div>
+                            <div>
+                                <a href="http://www.sublimetext.com/download" target="_blank">Sublime Text </a> - Linux, Mac or Windows
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Folder Structure -->
+                <section>
+                    <h3>Development Sandbox</h3>
+                    <div class="center">
+                        <img src="images/global/DevelopmentSandbox.jpg" alt="Developer Sandbox"/>
+                    </div>
+                    <p>
+                        All the files should be stored within the same folder.<br/>
+                        All work done in class will be saved in C:\Sandbox\GDI_IntermediateHTMLCSS
+                        <div class="center">
+                            <img src="images/global/DeveloerSandboxExplorer.png" alt="Developer Sandbox Explorer"/>
+                        </div>
+                    </p>
+                    <p>
+                        <strong>This includes:</strong>
+                        <br/>
+                        HTML Files | CSS Files | Images | Script files | Other
+                    </p>
+                    <p>
+                        <small>Note: File names should <strong>NOT</strong> include spaces or special characters. File names ARE case sensitive.</small>
+                    </p>
+                </section>
+                <section>
+                    <h3>Student Files</h3>
+                    <p>
+                        Please download and extract the following files into your Developer Sandbox <br/>
+                        <ol>
+                            <li> <a href="StudentFiles/class1.zip">Class 1</a> </li>
+                            <li> <a href="StudentFiles/class2.zip">Class 2</a> </li>
+                            <li> <a href="StudentFiles/class3.zip">Class 3</a> </li>
+                            <li> <a href="StudentFiles/class4.zip">Class 4</a> </li>
+                        </ol>
+                    </p>
+                </section>
+                <section>
+                    <div class="center">
+                        <img src="images/global/hand-raise.gif" alt="Guy raising his hand">
+                    </div>
+                    <h2>
+                        Please Ask <strong>Questions</strong>
+                    </h2>
+                    <p>We will be covering a lot of material, so please ask for help if you need help with anything or need clarification.</p>
+                </section>
+            </section><!--End getting started-->
+        <!--Class 1-->
+            <section>
+                <section>
+                    <h1>Let's Start It!</h1>
+                    <h3>
+                        <a href="class1.html">Lesson 1</a>
+                    </h3>
+                </section>                
+            </section><!--End Class 1-->
+
+            <!--First Break Time-->
+        <section>
+                <h3>Break Time!</h3>
+                <div class="message"></div>
+                <div class="center">
+                    <img src="images/global/BreakTimeCoffee.jpg" alt="Break Time" />
+                </div>
+                <h4>Up Next: CSS</h4>
+                <div class="stopwatch">
+                    <div class="clock"></div>    
+                </div>                
+
+                <script type="text/javascript">
+                    var clock;
+
+                    $(document).ready(function () {
+                        var mins = 60 * 15;
+                        clock = $('.clock').FlipClock(mins, {
+                            clockFace: 'MinuteCounter',
+                            countdown: true,
+                            autoStart: true,
+                            callbacks: {
+                                end: function () {
+                                    $('.message').html("Time's Up!");
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </section> <!--End First Break Time-->
+            <!--Class 2-->
+            <section>
+                <h1>Let's Style It!</h1>
+                <h2>CSS</h2>
+                <h3>
+                    <a href="class2.html">Lesson 2</a>
+                </h3>
+            </section><!--End Class 1-->
+            <!--Lunch Time-->
+            <section>
+                <h3>Lunch Time!</h3>
+                <div class="LunchMessage"></div>
+                <div class="center">
+                    <img src="images/global/LunchTime.jpg" alt="Lunch Time" />
+                </div>
+                <h4>Up Next: HTML Intermediate</h4>
+                 <div class="stopwatch">
+                    <div class="LunchClock"></div>    
+                </div>    
+
+                <script type="text/javascript">
+                    var clock;
+
+                    $(document).ready(function () {
+                        var mins = 60 * 60;
+                        clock = $('.LunchClock').FlipClock(mins, {
+                            clockFace: 'MinuteCounter',
+                            countdown: true,
+                            autoStart: true,
+                            callbacks: {
+                                end: function () {
+                                    $('.LunchMessage').html("Lunch is Over");
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </section> <!--End Lunch Time-->
+            <!--Class 3-->
+            <section>
+                <h1>Let's Add To It!</h1>
+                <h2>More HTML</h2>
+                <h3>
+                    <a href="class3.html">Lesson 3</a>
+                </h3>
+            </section><!--End Class 1-->
+            <!--2nd Break Time-->
+            <section>
+                <h3>Break Time!</h3>
+                <div class="SecondsBreakMessage"></div>
+                <div class="center">
+                    <img src="images/global/BreakTimeKeyboard.jpg" alt="Break Time" />
+                </div>
+                <h4>Up Next: HTMl Advanced</h4>
+                <div class="stopwatch">
+                    <div class="SecondsBreakClock"></div>    
+                </div>    
+
+                <script type="text/javascript">
+                    var clock;
+
+                    $(document).ready(function () {
+                        var mins = 60 * 15;
+                        clock = $('.SecondsBreakClock').FlipClock(mins, {
+                            clockFace: 'MinuteCounter',
+                            countdown: true,
+                            autoStart: true,
+                            callbacks: {
+                                end: function () {
+                                    $('.SecondsBreakMessage').html("Time's Up!");
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </section> <!--End 2nd Break Time-->
+            <!--Class 1-->
+            <section>
+                <h1>Let's Finish It!</h1>
+                <h2>Advanced HTML</h2>
+                <h3>
+                    <a href="class4.html">Lesson 4</a>
+                </h3>
+            </section><!--End Class 4-->
+            <!--Question Time-->
+            <section>
+                <h3>Question Time!</h3>
+                <div class="QuestionsMessage"></div>
+                <div class="center">
+                    <img src="images/global/BreakTimeDog.jpg" alt="Break Time" /> <br /><br /><br />
+                </div>
+                <div class="stopwatch">
+                    <div class="QuestionsClock"></div>    
+                </div>   
+
+                <script type="text/javascript">
+                    var clock;
+
+                    $(document).ready(function () {
+                        var mins = 60 * 15;
+                        clock = $('.QuestionsClock').FlipClock(mins, {
+                            clockFace: 'MinuteCounter',
+                            countdown: true,
+                            autoStart: true,
+                            callbacks: {
+                                end: function () {
+                                    $('.QuestionsMessage').html("Time's Up!");
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </section> <!--End Question Time-->
+
+        </div>
+        <div id="footer"></div>
+    </div>
+
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="js/GDIDefaultRevealSettings.js"></script>
+
+</body>
+</html>
