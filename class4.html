@@ -14,10 +14,10 @@
 
     <link rel="stylesheet" href="reveal.js/css/reveal.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="reveal.js/css/theme/black.css">    
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css">
     <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"> <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="css/flipclock.css">
-    <link rel="stylesheet" href="css/theme/gdidefault.css" />    
+    <link rel="stylesheet" href="css/theme/gdidefault.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -54,40 +54,32 @@
                 <h4>Class 4</h4>
             </section>
 
-        <!-- Welcome
-        <section>
-            <h3>Welcome!</h3>
-            <div >
-                <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-                <p class="green">Some "rules"</p>
-                <ul>
-                    <li>We are here for you!</li>
-                    <li>Every question is important</li>
-                    <li>Help each other</li>
-                    <li>Have fun</li>
-                </ul>
-            </div>
-        </section>
-        -->
+            <!-- Welcome
+            <section>
+                <h3>Welcome!</h3>
+                <div >
+                    <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+                    <p class="green">Some "rules"</p>
+                    <ul>
+                        <li>We are here for you!</li>
+                        <li>Every question is important</li>
+                        <li>Help each other</li>
+                        <li>Have fun</li>
+                    </ul>
+                </div>
+            </section>
+            -->
             <!-- Lesson Agenda-->
             <section>
                 <section>
                     <h3>This Lesson Includes</h3>
                     <ul class="left">
-                        <li>Website Review</li>
-                        <li>HTML Review</li>
-                        <li>CSS Review</li>
-                        <li>Intermediate CSS Concepts</li>
-                        <li>HTML5 Intro</li>
+                        <li>Media Queries</li>
+                        <li>Responsive Design</li>
+                        <li>HTML5 Tools Review</li>
                         <li>Interactive Demos</li>
                     </ul>
-                </section>
-                <section>
-                    <h3>What we'll be building</h3>
-                    <div class="right">
-                        <img src="images/project-screenshot.jpg" alt="Project screenshot">
-                    </div>
-                </section>
+                </section>                
             </section> <!-- End Lesson Agenda-->
             <!-- Media Queries -->
             <section>
@@ -109,13 +101,16 @@
                     <pre><code>background-color: grey;
 @media screen and (min-width: 300px) and (max-width: 600px)
 {
-background-color: red;
+    background-color: red;
 }
 @media screen and (min-width: 900px) and (max-width: 1200px)
 {
-background-color: blue;
+    background-color: blue;
 }</code></pre>
-                    <pre class="fragment"><code>&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;</code></pre>
+                    <pre class="fragment">
+                        <code>&lt;meta name="viewport" content="width=device-width, 
+    minimum-scale=1.0, maximum-scale=1.0"&gt;</code>
+</pre>
                 </section>
                 <section>
                     <h2>Media Queries</h2>
@@ -127,24 +122,23 @@ background-color: blue;
 
             <!-- Responsive Design -->
             <section>
+                <h2>Responsive Design</h2>
                 <section>
-                    <h2>Responsive Design</h2>
                     <p>Design by thinking of the structure of your website, and how different elements fit into the structure.</p>
                 </section>
                 <section>
-                    <h2>Responsive Design</h2>
                     <p class="yellow">Desktop View</p>
-                    <img src="images/media-queries-desktop.png" style="height:500px" alt="" />
+                    <h2>
+                        <img src="images/media-queries-desktop.png" style="height: 500px" alt="" />
+                    </h2>
                 </section>
                 <section>
-                    <h2>Responsive Design</h2>
                     <p class="yellow">Tablet View</p>
-                    <img src="images/media-queries-tablet.png" style="height:500px" alt="" />
+                    <h2><img src="images/media-queries-tablet.png" style="height: 500px" alt="" /></h2>
                 </section>
                 <section>
-                    <h2>Responsive Design</h2>
                     <p class="yellow">Mobile View</p>
-                    <img src="images/media-queries-phone.png" style="height:500px" alt="" />
+                    <h2><img src="images/media-queries-phone.png" style="height: 500px" alt="" /></h2>
                 </section>
             </section>
 
@@ -189,20 +183,15 @@ background-color: blue;
 
             <!-- Let's Develop It-->
             <section>
-                <section>
-                    <h2>Let's Develop It</h2>
-                    <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
-                </section>
-                <section>
-                    <h2>Let's Develop It</h2>
-                    <ul>
-                        <li>Use media queries to make our site responsive</li>
-                        <li>Start small</li>
-                        <li>You will have a little bit more time than normal</li>
-                        <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/css3-media-queries" target="_blank">CSS3 and Media Queries</a></li>
-                        <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target="_blank">Responsive Design in 3 Easy Steps</a></li>
-                    </ul>
-                </section>
+                <h2>Let's Develop It</h2>
+                <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
+                <ul>
+                    <li>Use media queries to make our site responsive</li>
+                    <li>Start small</li>
+                    <li>You will have a little bit more time than normal</li>
+                    <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/css3-media-queries" target="_blank">CSS3 and Media Queries</a></li>
+                    <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target="_blank">Responsive Design in 3 Easy Steps</a></li>
+                </ul>
             </section>
 
             <!-- Tools and Deployment -->
@@ -226,19 +215,19 @@ background-color: blue;
                     <img src="images/screenshots/html5-please.png" alt="" />
                 </section>
                 <section>
-                    <img src="images/html5rocks.png" alt="" />
+                    <h2><img src="images/html5rocks.png" alt="" /></h2>
                     <p>
                         <a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a>
                     </p>
                 </section>
                 <section>
-                    <img src="images/Mozilla-Developer-Network.png" alt="" />
+                    <h2><img src="images/Mozilla-Developer-Network.png" alt="" /></h2>
                     <p>
                         <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a>
                     </p>
                 </section>
                 <section>
-                    <img src="images/html5doctor.png" alt="" />
+                    <h2><img src="images/html5doctor.png" alt="" /></h2>
                     <p>
                         <a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a>
                     </p>
@@ -250,9 +239,11 @@ background-color: blue;
                     <p>HTML5 IE enabling script</p>
                 </section>
                 <section>
-                    <a href="http://modernizr.com/" target="_blank">
-                        <img src="images/modernizr.png" alt="" />
-                    </a>
+                    <h2>
+                        <a href="http://modernizr.com/" target="_blank">
+                            <img src="images/modernizr.png" alt="" />
+                        </a>
+                    </h2>
                     <ul>
                         <li>JavaScript library that detects HTML5 and CSS3 features in the user’s browser</li>
                         <li>Works well with polyfills - a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively</li>
@@ -317,13 +308,13 @@ background-color: blue;
             <section>
                 <h3>That's All Folks!</h3>
                 <div class="center">
-                    <a href="index.html#/11"> <img src="images/BreakTimeDog.gif" alt="Break Time" /></a>
+                    <a href="index.html#/11"> <img src="images/global/keep-calm-it-is-only-the-end-of-our-powerpoint.png" alt="Break Time" /></a>
                 </div>
             </section>
         </div>
         <div id="footer"></div>
     </div>
-    
+
     <script src="js/slides.js"></script>
     <script src="reveal.js/lib/js/head.min.js"></script>
     <script src="reveal.js/js/reveal.js"></script>

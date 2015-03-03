@@ -80,13 +80,7 @@
                         <li>Transitions, Transforms & Animations</li>
                         <li>Interactive Demos</li>
                     </ul>
-                </section>
-                <section>
-                    <h3>What we'll be building</h3>
-                    <div class="right">
-                        <img src="images/project-screenshot.jpg" alt="Project screenshot">
-                    </div>
-                </section>
+                </section>            
             </section> <!-- End Lesson Agenda-->
             <section>
                 <h2>CSS3 Background</h2>
@@ -174,7 +168,7 @@ img[src$=".jpg"] {
                         <li><strong>odd</strong> - selects odd elements</li>
                     </ul>
                 </section>
-                <section>
+                <section class="nth-child-table">
                     <h2>:nth-child</h2>
                     <pre><code data-trim>tbody tr:nth-child(an + b) { backround-color: red; }</code></pre>
                     <p>
@@ -614,8 +608,8 @@ text-shadow: 1px 1px 10px red,
             30px 30px 10px purple;
 }</code></pre>
                     <article class="text-shadow">
-                        <div class="example1">lorem ipsum</div>
-                        <div class="example2">lorem ipsum</div>
+                        <span class="example1">lorem ipsum</span>
+                        <span class="example2">lorem ipsum</span>
                     </article>
                 </section>
             </section>
@@ -643,6 +637,7 @@ text-shadow: 1px 1px 10px red,
 
                 </section>
                 <section>
+                    <div style="padding-top: 25px;"></div>
                     <h3>Linear Gradients</h3>
                     <h4>Example 1</h4>
                     <div class="left-half" style="width: 90%;">
@@ -675,7 +670,7 @@ text-shadow: 1px 1px 10px red,
 
                 </section>
                 <section>
-                    <h2>Linear Gradients</h2>
+                    <h3>Linear Gradients</h3>
                     <h4>Example 2</h4>
                     <pre><code>.linear-example4 {
 background-image: linear-gradient(red, white);
@@ -696,7 +691,8 @@ background-image: linear-gradient(bottom right, red, white);
                     </article>
                 </section>
                 <section>
-                    <h2>Radial Gradients</h2>
+                    <div style="padding-top: 20px;"></div>
+                    <h3>Radial Gradients</h3>
                     <h4>Example 1</h4>
                     <pre><code>.radial-example1 {
   background-image: radial-gradient(circle cover, red, orange, yellow, green, blue, indigo, violet);
@@ -717,7 +713,8 @@ background-image: linear-gradient(bottom right, red, white);
                     </article>
                 </section>
                 <section>
-                    <h2>Radial Gradients</h2>
+                    <div style="padding-top: 20px;"></div>
+                    <h3>Radial Gradients</h3>
                     <h4>Example 2</h4>
                     <pre><code>.radial-example4 {
   background-image: radial-gradient(circle cover, red, white);
@@ -1042,7 +1039,7 @@ background-image: linear-gradient(bottom right, red, white);
                             <li>Add transitions to the navigation links</li>
                             <li>Rotate the famous women images on hover</li>
                             <li>Add transitions to the jump arrows</li>
-                            <li>Add transitions to the organization images on hover</li>
+                            <li>Add hover transitions to the organization images</li>
                             <li>Add a gradient to the footer background</li>
                         </ul>
                     </li>

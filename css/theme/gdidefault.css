@@ -106,6 +106,10 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
+.headerImage {
+    margin-bottom: 0 !important;
+}
+
 .reveal section img {
     margin: 15px;
     background: none;
@@ -171,6 +175,7 @@ body {
 
 .yellow {
     color: #EDAB23;
+    text-align: center;
 }
 
 .pink {
@@ -237,3 +242,5 @@ body {
 .large {
    font-size: 2em !important;
 }
+
+
